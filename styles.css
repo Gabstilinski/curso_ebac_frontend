@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 2px;    
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #264476;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header h1 {
+    text-align: center;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 8px;
+    color: hsl(48, 83%, 72%);
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: hsl(48, 83%, 72%);
+}
+
+#dashed {
+    display: block;
+    width: 100%; 
+    border-bottom: 4px dotted;
+    color: hsl(48, 83%, 72%); 
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-button {
+    display: inline;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 50px;
+    border: 3px solid #385079;
+    box-shadow: 4px 4px #797bf3;
+    background-color: hsl(48, 76%, 77%);
+    color: #264476;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: none;
+    flex: 1;
+}
+
+.button {
+    border-radius: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 8px;
+    margin-top: 40px;
+    border: 3px solid #385079;
+    box-shadow: 4px 4px #797bf3;
+    cursor: pointer;
+    background-color: hsl(48, 83%, 72%);
+    color: #264476;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: hsl(48, 80%, 86%);
+}
+
+ol li {
+    text-transform: uppercase;
+    margin: 0 30px;
+    padding: 5px 0px;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: hsl(48, 83%, 72%);
+}
+
+li:hover {
+    cursor: pointer;
+    color: hsl(48, 80%, 86%);
+}
+
+li.completed {
+    text-decoration: line-through #fff;
+}
+
+@media (max-width: 550px) {
+    body {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-button {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
